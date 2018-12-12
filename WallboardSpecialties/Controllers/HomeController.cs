@@ -43,8 +43,8 @@ namespace WallboardSpecialties.Controllers
             String email = form["Email address"].ToString();
             String password = form["Password"].ToString();
 
-            var currentUser = db.Database.SqlQuery<Admin>("SELECT *" +
-                                                            "FROM Admin" +
+            var currentUser = db.Database.SqlQuery<Admin>("SELECT * " +
+                                                            "FROM Admin " +
                                                             "WHERE Username = '" + email + "' AND " +
                                                             "password = '" + password + "'");
 

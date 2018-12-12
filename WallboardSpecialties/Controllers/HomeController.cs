@@ -9,6 +9,7 @@ using WallboardSpecialties.Models;
 
 namespace WallboardSpecialties.Controllers
 {
+   
     public class HomeController : Controller
     {
         private WallboardContext db = new WallboardContext();

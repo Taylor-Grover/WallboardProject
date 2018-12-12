@@ -18,5 +18,12 @@ namespace WallboardSpecialties.Models
         public string PhoneNumber { get; set; }
         public string LastName { get; set; }
 
+        public int ProjectID { get; set; }
+        public int Job_TypeID { get; set; }
+        public int SubcontractorID { get; set; }
+        public virtual Subcontractor Subcontractor { get; set; }
+        public virtual Project Project { get; set; }
+        public virtual Job_Type Job_Type { get; set; }
+
     }
 }

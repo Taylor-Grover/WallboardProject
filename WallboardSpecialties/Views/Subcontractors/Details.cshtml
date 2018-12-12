@@ -1,0 +1,42 @@
+﻿@model WallboardSpecialties.Models.Subcontractor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Subcontractor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcontractorPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcontractorPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subcontractorTypeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subcontractorTypeID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SubcontractorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

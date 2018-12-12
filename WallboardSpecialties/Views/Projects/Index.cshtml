@@ -4,15 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<div class="w3-card-4 w3-blue-gray" style="padding:15px">
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Location.Description)
+            @Html.DisplayName("Location")
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Description)
@@ -26,26 +22,28 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Location.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StartDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EndDate)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProjectID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                <b> @Html.ActionLink("Edit", "Edit", new { id = item.ProjectID }) </b>|
+              
+                <b> @Html.ActionLink("Delete", "Delete", new { id = item.ProjectID })</b>
+            </td>
+        </tr>
+    }
 
 </table>
+</div>

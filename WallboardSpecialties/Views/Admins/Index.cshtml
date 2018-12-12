@@ -4,17 +4,17 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+
 
 <div>
     <br />
-    <h4>Update Projects</h4>
+    <h4>Manage Projects and Subcontractors</h4>
     <hr />
     <div class="row">
         <div class="col-md-6">
             <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("Create", "Projects")'" style="background-color: cadetblue">Create a new Project</button>
         </div>
-        <br />
+       
 
         <div class="col-md-6">
             <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("Create", "Subcontractors")'" style="background-color: cadetblue">Add a new Subcontractor</button>
@@ -25,7 +25,7 @@
         <div class="col-md-6">
             <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("Index", "Projects")'" style="background-color: cadetblue">Manage Projects</button>
         </div>
-        <br />
+       
         <div class="col-md-6">
             <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("Index", "Subcontractors")'" style="background-color: cadetblue">Manage Subcontractors</button>
         </div>

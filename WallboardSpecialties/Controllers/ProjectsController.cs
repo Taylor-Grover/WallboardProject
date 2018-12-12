@@ -11,6 +11,7 @@ using WallboardSpecialties.Models;
 
 namespace WallboardSpecialties.Controllers
 {
+    [Authorize]
     public class ProjectsController : Controller
     {
         private WallboardContext db = new WallboardContext();

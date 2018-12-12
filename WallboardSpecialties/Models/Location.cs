@@ -12,6 +12,7 @@ namespace WallboardSpecialties.Models
     {
         [Key]
         public int LocationID { get; set; }
+        [Display(Name = "Location")]
         public string Description { get; set; }
     }
 }

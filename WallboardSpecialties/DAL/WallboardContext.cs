@@ -12,5 +12,13 @@ namespace WallboardSpecialties.DAL
         {
 
         }
+
+        public System.Data.Entity.DbSet<WallboardSpecialties.Models.Admin> Admins { get; set; }
+
+        public System.Data.Entity.DbSet<WallboardSpecialties.Models.Subcontractor> Subcontractors { get; set; }
+
+        public System.Data.Entity.DbSet<WallboardSpecialties.Models.Project> Projects { get; set; }
+
+        public System.Data.Entity.DbSet<WallboardSpecialties.Models.Location> Locations { get; set; }
     }
 }

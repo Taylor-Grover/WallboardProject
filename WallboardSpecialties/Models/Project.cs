@@ -15,7 +15,7 @@ namespace WallboardSpecialties.Models
         [Key]
         public int ProjectID { get; set; }
 
-        [DisplayName("Description")]
+        [DisplayName("Project Description")]
         public string Description { get; set; }
 
         [DisplayName("Start Date")]

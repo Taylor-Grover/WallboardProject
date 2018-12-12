@@ -12,7 +12,9 @@ namespace WallboardSpecialties.Models
     {
         [Key]
         public int Job_TypeID { get; set; }
+        [Display(Name = "Job Type")]
         public string Description { get; set; }
+        [Display(Name = "Pay Rate")]
         public double Rate { get; set; }
     }
 }

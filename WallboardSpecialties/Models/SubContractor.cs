@@ -15,13 +15,12 @@ namespace WallboardSpecialties.Models
         [DisplayName("Subcontractor ID")]
         public int SubcontractorID { get; set; }
 
-        [DisplayName("Name")]
+        [DisplayName("Company Name")]
         public string CompanyName { get; set; }
 
-        [DisplayName("Phone")]
+        [DisplayName("Company Phone")]
         public string subcontractorPhone { get; set; }
 
-        [DisplayName("Type")]
         public int? subcontractor_TypeID { get; set; }
     }
 }

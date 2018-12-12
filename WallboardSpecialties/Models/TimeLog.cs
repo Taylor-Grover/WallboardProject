@@ -12,10 +12,15 @@ namespace WallboardSpecialties.Models
     {
         [Key]
         public int LogID { get; set; }
+        [Display(Name = "Clock In Time")]
         public DateTime Clock_In { get; set; }
+        [Display(Name = "Clock Out Time")]
         public DateTime Clock_Out { get; set; }
+        [Display(Name = "Hours Worked")]
         public double HoursWorked { get; set; }
+        [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         public int ProjectID { get; set; }

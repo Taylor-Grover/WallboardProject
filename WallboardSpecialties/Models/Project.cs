@@ -13,15 +13,19 @@ namespace WallboardSpecialties.Models
     {
         //Project Attributs
         [Key]
-        public int projectID { get; set; }
+        public int ProjectID { get; set; }
 
         [DisplayName("Description")]
-        public string description { get; set; }
+        public string Description { get; set; }
 
-        [DisplayName("Location")]
-        public string location { get; set; }
+        [DisplayName("Start Date")]
+        public DateTime StartDate { get; set; }
 
-        [DisplayName("Supervisor ID")]
-        public string supervisor { get; set; }
+        [DisplayName("End Date")]
+        public DateTime EndDate { get; set; }
+
+        public int LocationID { get; set; }
+
+        public virtual Location Location { get; set; }
     }
 }

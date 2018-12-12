@@ -22,6 +22,6 @@ namespace WallboardSpecialties.Models
         public string subcontractorPhone { get; set; }
 
         [DisplayName("Type")]
-        public string subcontractorTypeID { get; set; }
+        public int? subcontractor_TypeID { get; set; }
     }
 }

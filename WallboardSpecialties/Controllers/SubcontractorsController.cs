@@ -47,7 +47,7 @@ namespace WallboardSpecialties.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "SubcontractorID,CompanyName,subcontractorPhone,subcontractorTypeID")] Subcontractor subcontractor)
+        public ActionResult Create([Bind(Include = "SubcontractorID,CompanyName,subcontractorPhone,subcontractor_TypeID")] Subcontractor subcontractor)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace WallboardSpecialties.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "SubcontractorID,CompanyName,subcontractorPhone,subcontractorTypeID")] Subcontractor subcontractor)
+        public ActionResult Edit([Bind(Include = "SubcontractorID,CompanyName,subcontractorPhone,subcontractor_TypeID")] Subcontractor subcontractor)
         {
             if (ModelState.IsValid)
             {

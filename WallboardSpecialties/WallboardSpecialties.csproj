@@ -283,16 +283,16 @@
     <Content Include="Views\Admins\Details.cshtml" />
     <Content Include="Views\Admins\Edit.cshtml" />
     <Content Include="Views\Admins\Index.cshtml" />
-    <Content Include="Views\Subcontractors\Create.cshtml" />
-    <Content Include="Views\Subcontractors\Delete.cshtml" />
-    <Content Include="Views\Subcontractors\Details.cshtml" />
-    <Content Include="Views\Subcontractors\Edit.cshtml" />
-    <Content Include="Views\Subcontractors\Index.cshtml" />
     <Content Include="Views\Projects\Create.cshtml" />
     <Content Include="Views\Projects\Delete.cshtml" />
     <Content Include="Views\Projects\Details.cshtml" />
     <Content Include="Views\Projects\Edit.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
+    <Content Include="Views\Subcontractors\Create.cshtml" />
+    <Content Include="Views\Subcontractors\Delete.cshtml" />
+    <Content Include="Views\Subcontractors\Details.cshtml" />
+    <Content Include="Views\Subcontractors\Edit.cshtml" />
+    <Content Include="Views\Subcontractors\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

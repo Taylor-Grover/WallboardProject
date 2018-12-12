@@ -20,5 +20,11 @@ namespace WallboardSpecialties.DAL
         public System.Data.Entity.DbSet<WallboardSpecialties.Models.Project> Projects { get; set; }
 
         public System.Data.Entity.DbSet<WallboardSpecialties.Models.Location> Locations { get; set; }
+
+        public System.Data.Entity.DbSet<WallboardSpecialties.Models.TimeLog> TimeLogs { get; set; }
+
+        public System.Data.Entity.DbSet<WallboardSpecialties.Models.Job_Type> Job_Type { get; set; }
+
+        public System.Data.Entity.DbSet<WallboardSpecialties.Models.TempEmployee> TempEmployees { get; set; }
     }
 }

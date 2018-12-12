@@ -24,6 +24,6 @@ namespace WallboardSpecialties.Models
         public virtual Subcontractor Subcontractor { get; set; }
         public virtual Project Project { get; set; }
         public virtual Job_Type Job_Type { get; set; }
-
+        public virtual TempEmployee TempEmployee { get; set; }
     }
 }

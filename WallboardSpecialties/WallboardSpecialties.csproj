@@ -200,6 +200,8 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\SubcontractorsController.cs" />
+    <Compile Include="Controllers\TempEmployeesController.cs" />
+    <Compile Include="Controllers\TimeLogsController.cs" />
     <Compile Include="DAL\WallboardContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -294,6 +296,16 @@
     <Content Include="Views\Subcontractors\Details.cshtml" />
     <Content Include="Views\Subcontractors\Edit.cshtml" />
     <Content Include="Views\Subcontractors\Index.cshtml" />
+    <Content Include="Views\TimeLogs\Create.cshtml" />
+    <Content Include="Views\TimeLogs\Delete.cshtml" />
+    <Content Include="Views\TimeLogs\Details.cshtml" />
+    <Content Include="Views\TimeLogs\Edit.cshtml" />
+    <Content Include="Views\TimeLogs\Index.cshtml" />
+    <Content Include="Views\TempEmployees\Create.cshtml" />
+    <Content Include="Views\TempEmployees\Delete.cshtml" />
+    <Content Include="Views\TempEmployees\Details.cshtml" />
+    <Content Include="Views\TempEmployees\Edit.cshtml" />
+    <Content Include="Views\TempEmployees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

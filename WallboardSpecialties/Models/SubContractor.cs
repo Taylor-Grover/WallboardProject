@@ -9,20 +9,19 @@ using System.Web;
 namespace WallboardSpecialties.Models
 {
     [Table("Subcontractor")]
-    public class SubContractor
+    public class Subcontractor
     {
-        //SubContractor Attributes
         [Key]
         [DisplayName("Subcontractor ID")]
-        public int subcontractorID { get; set; }
+        public int SubcontractorID { get; set; }
 
         [DisplayName("Name")]
-        public string subcontractorName { get; set; }
+        public string CompanyName { get; set; }
 
         [DisplayName("Phone")]
         public string subcontractorPhone { get; set; }
 
         [DisplayName("Type")]
-        public string subcontractorType { get; set; }
+        public string subcontractorTypeID { get; set; }
     }
 }

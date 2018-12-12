@@ -6,28 +6,29 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.password)
-        </th>
-        <th></th>
-    </tr>
+<div>
+    <br />
+    <h4>Update Projects</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("Create", "Projects")'" style="background-color: cadetblue">Create a new Project</button>
+        </div>
+        <br />
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.password)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.username }) |
-            @Html.ActionLink("Details", "Details", new { id=item.username }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.username })
-        </td>
-    </tr>
-}
+        <div class="col-md-6">
+            <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("Create", "Subcontractors")'" style="background-color: cadetblue">Add a new Subcontractor</button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("Index", "Projects")'" style="background-color: cadetblue">Manage Projects</button>
+        </div>
+        <br />
+        <div class="col-md-6">
+            <button type="button" class="btn btn-lg" onclick="location.href='@Url.Action("Index", "Subcontractors")'" style="background-color: cadetblue">Manage Subcontractors</button>
+        </div>
+    </div>
 
-</table>
+</div>

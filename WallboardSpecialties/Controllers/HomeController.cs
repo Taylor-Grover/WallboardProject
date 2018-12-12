@@ -52,7 +52,7 @@ namespace WallboardSpecialties.Controllers
             {
                 FormsAuthentication.SetAuthCookie(email, rememberMe);
 
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Admin");
 
             }
             else

@@ -11,6 +11,7 @@ namespace WallboardSpecialties.Models
     public class TempEmployee
     {
         [Key, Column(Order = 0)]
+        [RegularExpression(@"^(\d{3})-?(\d{3})-?(\d{4})$", ErrorMessage = "Phone must me 0000000000 or 000-000-0000")]
         public string PhoneNumber { get; set; }
 
         [Key, Column(Order = 1)]

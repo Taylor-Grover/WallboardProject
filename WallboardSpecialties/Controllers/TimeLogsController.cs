@@ -68,7 +68,7 @@ namespace WallboardSpecialties.Controllers
                 timeLog.PhoneNumber = phone;
                 db.TimeLogs.Add(timeLog);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
 
             ViewBag.Job_TypeID = new SelectList(db.Job_Type, "Job_TypeID", "Description", timeLog.Job_TypeID);

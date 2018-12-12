@@ -58,11 +58,11 @@ namespace WallboardSpecialties
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "973316454379-buhjfu60buqn8ircsljs9t7dotms8ohu.apps.googleusercontent.com",
+                ClientSecret = "fT6GTkLyv2mr9GElo_wy7b1q"
+            });
         }
     }
 }
